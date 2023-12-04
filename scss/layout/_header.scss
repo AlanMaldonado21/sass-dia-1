@@ -1,0 +1,26 @@
+@import '../var/variables';
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+    img{
+       width: 10rem; 
+    }
+    nav{
+        ul{
+            display: flex;
+            list-style-type: none;
+            li{
+                a{
+                    font-size: 14px;
+                    margin: 10px;
+                    text-decoration: none;
+                    color: $color-green;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+    }
+}
