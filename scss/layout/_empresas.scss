@@ -1,0 +1,45 @@
+.empresas {
+    display: flex;
+    justify-content: center;
+    .cajita {
+        margin: 25px;
+        width: 65px;
+        background-color: white;
+        padding: 15px;
+        border-radius: 5px;
+        -webkit-box-shadow: -3px 10px 64px 5px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -3px 10px 64px 5px rgba(0, 0, 0, 0.75);
+        box-shadow: -3px 10px 64px 5px rgba(0, 0, 0, 0.75);
+
+
+        // Nombre animacion
+        animation-name: levitar;
+        // Cuantes veces quiero que se repita la animacion
+        animation-iteration-count: infinite;
+        // Que tan rapido es la velocidad de mi animacion
+        animation-timing-function: linear;
+        // Duracion de la animacion
+        animation-duration: 3s;
+
+        
+    }
+}
+
+
+@keyframes levitar {
+    
+    0%{
+        transform: translateY(10px);
+    }
+
+    50%{
+        transform: translateY(15px);
+    }
+
+    100%{
+  
+
+       transform: translateY(25px);
+    }
+
+}

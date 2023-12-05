@@ -59,13 +59,151 @@ main section div {
   justify-content: center;
 }
 
-.boton {
-  background-color: yellow;
-  color: black;
+.coder-beca {
+  margin: 2rem;
+  padding: 25px;
+  background-image: linear-gradient(to right, #F4FE7E, #E1F04B, #D2E513);
   border-radius: 5px;
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.coder-beca .container-1 {
+  display: flex;
+  flex-direction: column;
+}
+.coder-beca .container-1 h1 {
+  color: black;
+  text-align: start;
+  transition: 1s;
+}
+.coder-beca .container-1 h1:hover {
+  transform: rotate(360deg);
+}
+.coder-beca .container-1 p {
+  text-align: start;
+}
+.coder-beca .container-tarjeta {
+  background-color: #1A1A1A;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 5px;
+  transform: translate(15px, 65px) rotate(5deg);
+  -webkit-box-shadow: 10px 32px 56px 22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 32px 56px 22px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 32px 56px 22px rgba(0, 0, 0, 0.75);
+  animation-name: cambioDeColores;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-delay: 2s;
+}
+.coder-beca .container-tarjeta h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.coder-beca .container-tarjeta p {
+  color: #BEBEBE;
+  font-size: 12px;
+  text-align: start;
+}
+.coder-beca .container-tarjeta ul {
+  margin: 14px;
+}
+.coder-beca .container-tarjeta ul li {
+  color: #BEBEBE;
+  font-size: 12px;
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.coder-beca .container-tarjeta:hover {
+  transform: translateY(120px) skew(-10deg, -5deg);
+}
+.coder-beca .icono-wpp {
+  position: fixed;
+  right: 25px;
+  bottom: 35px;
+  transition: all 1s linear;
+}
+.coder-beca .icono-wpp:hover {
+  background-color: red;
+  transform: translateY(-38px);
+}
+
+@keyframes cambioDeColores {
+  0% {
+    background-color: #1A1A1A;
+  }
+  50% {
+    background-color: orange;
+    transform: translateY(65px) rotate(10deg);
+  }
+  100% {
+    background-color: red;
+    transform: translateY(95px) rotate(15deg);
+  }
+}
+.empresas {
+  display: flex;
+  justify-content: center;
+}
+.empresas .cajita {
+  margin: 25px;
+  width: 65px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: -3px 10px 64px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 10px 64px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: -3px 10px 64px 5px rgba(0, 0, 0, 0.75);
+  animation-name: levitar;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+}
+
+@keyframes levitar {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(25px);
+  }
+}
+.boton {
+  background: rgb(235, 218, 17);
+  background: linear-gradient(292deg, rgba(235, 218, 17, 0.9444152661) 0%, rgb(6, 121, 207) 61%, rgb(0, 1, 255) 95%);
+  padding: 15px;
+  color: black;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+}
+
+.boton-2 {
+  background-image: radial-gradient(ellipse at top, yellow, green);
+  margin-left: 25px;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+}
+.boton-2:hover {
+  border: 1px solid black;
+  background: rgb(64, 52, 177);
+  background: radial-gradient(circle, rgb(64, 52, 177) 8%, rgb(233, 204, 207) 96%);
+}
+
+.section-gradiente {
+  margin: 2rem;
+  padding: 25px;
+  background-image: linear-gradient(to right, #F4FE7E, #E1F04B, #D2E513);
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

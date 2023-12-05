@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoderHouse | SASS Día 1</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- LIBRERIA AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
-    
-    <div class="anuncio">
-        <p>Accedé a la <strong>CoderBeca del 70% + 6 cuotas sin interés en Cursos y Carreras ⌛15%</strong> OFF adicional en Carreras por Tiempo Limitado</p>
+
+    <div class="anuncio" data-aos="flip-up">
+        <p>Accedé a la <strong>CoderBeca del 70% + 6 cuotas sin interés en Cursos y Carreras ⌛15%</strong> OFF adicional
+            en Carreras por Tiempo Limitado</p>
     </div>
 
 
 
-    <header>
-        <img src="assets/logo-coder.png" alt="logo CoderHouse">
+    <header data-aos="zoom-in">
+        <img src="assets/logo-coder.png" alt="logo CoderHouse" class="animate__bounceInUp ">
         <nav>
             <ul>
                 <li><a href="#">Cursos Online</a></li>
@@ -28,14 +35,62 @@
     </header>
 
     <main>
-        <section>
+        <!-- <section class="section-gradiente">
             <h1>Cursos online en vivo para transformar tu realidad en tiempo récord</h1>
             <p>Clases online en vivo dictadas por expertos de la industria, enfoque 100% práctico, mentorías personalizadas y acceso a una comunidad de +280.000 estudiantes.</p>
             <div>
                 <a href="#" class="boton">Ver todos los cursos</a>
+                <a href="" class="boton-2">Ver las carreras</a>
             </div>
+        </section> -->
+        <section class="coder-beca animate__heartBeat">
+
+            <div class="container-1">
+                <h1>¿Qué es la CoderBeca?</h1>
+                <p>Nuestra misión es democratizar la educación de calidad en Latinoamérica. Para eso, te ofrecemos una
+                    CoderBeca del 70% para que puedas capacitarte y crecer profesionalmente.</p>
+            </div>
+
+            <div class="container-tarjeta">
+                <h2>¿Cómo accedo?</h2>
+                <p>El acceso a la CoderBeca es automático y para todos, solo tenés que cumplir con 2 requisitos una vez
+                    dentro del curso:</p>
+                <ul>
+                    <li>
+                        Entregar tus proyectos prácticos en tiempo y forma
+                    </li>
+                    <li>
+                        Cumplir con el 85% de asistencia a las clases en vivo
+                    </li>
+                </ul>
+            </div>
+            <a href="" class="icono-wpp">
+                <img src="assets/icono-wpp.png" alt="">
+            </a>
+        </section>
+
+        <section class="empresas">
+
+            <div class="cajita">
+                <img src="assets/icons8-logo-de-google-48.png" alt="icono google">
+            </div>
+
+            <div class="cajita">
+                <img src="assets/icons8-netflix-24.png" alt="">
+            </div>
+
+            <div class="cajita">
+                <img src="assets/icons8-x-50.png" alt="icono X">
+            </div>
+
         </section>
     </main>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

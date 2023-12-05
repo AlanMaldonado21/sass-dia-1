@@ -1,0 +1,129 @@
+.coder-beca {
+    margin: 2rem;
+    padding: 25px;
+    background-image: linear-gradient(to right, #F4FE7E, #E1F04B, #D2E513);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+
+    .container-1 {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            color: black;
+            text-align: start;
+            transition: 1s;
+            &:hover{
+
+                transform: rotate(360deg);
+            }
+        }
+
+        p {
+            text-align: start;
+        }
+    }
+
+    .container-tarjeta {
+        background-color: #1A1A1A;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        border-radius: 5px;
+
+        // MOVER EL ELEMENTO
+        // transform: translateY(60px);
+        // transform: translateX(-86px);
+        // transalate(horizontal, vertical)
+        // transform: translate(15px, 65px);
+
+        // GIRAR EL ELEMENTO
+        // transform: rotate(5deg);
+        
+        transform: translate(15px, 65px) rotate(5deg) ;
+
+        // SOMBRAS
+        -webkit-box-shadow: 10px 32px 56px 22px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 32px 56px 22px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 32px 56px 22px rgba(0, 0, 0, 0.75);
+
+
+        h2 {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+
+            
+        }
+
+        p {
+            color: #BEBEBE;
+            font-size: 12px;
+            text-align: start;
+        }
+
+        ul {
+            margin: 14px;
+
+            li {
+                color: #BEBEBE;
+                font-size: 12px;
+                text-align: start;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+        
+
+        // Nombre animacion
+        animation-name: cambioDeColores;
+        // Cuantes veces quiero que se repita la animacion
+        animation-iteration-count: infinite;
+        // Que tan rapido es la velocidad de mi animacion
+        animation-timing-function: linear;
+        // Duracion de la animacion
+        animation-duration: 10s;
+
+        animation-delay: 2s;
+
+        &:hover{
+
+            transform: translateY(120px)  skew(-10deg, -5deg);
+        }
+    }
+    .icono-wpp{
+        
+        position: fixed;
+        right: 25px;
+        bottom: 35px;
+
+        transition: all 1s linear;
+        &:hover{
+
+            background-color: red;
+            transform:  translateY(-38px);
+        }
+    }
+
+
+}
+
+@keyframes cambioDeColores {
+    
+    0%{
+        background-color: #1A1A1A;
+    }
+
+    50%{
+        background-color: orange;
+
+        transform: translateY(65px) rotate(10deg);
+    }
+
+    100%{
+       background-color: red;
+
+       transform: translateY(95px) rotate(15deg);
+    }
+
+}
